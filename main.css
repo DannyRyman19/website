@@ -5,13 +5,21 @@
     font-family: 'Antic Slab', serif;
 }
 
-
-.header {
-    text-align: center;
-    color: black;
-    font-size: 75px;
-    font-family: 'Antic Slab', serif;
-}
 .navbar {
     font-family: 'Antic Slab', serif;
+    font-size: 20px;
+  
+}
+.media{
+    font-family: 'Antic Slab',serif;
+    font-size: 20px;
+}
+.media-sub-heading {
+   color: orange;
+}
+
+.header {
+    font-family: 'Antic Slab', serif;
+    text-align: center;
+    font-size: 100px;;
 }
