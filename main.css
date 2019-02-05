@@ -1,4 +1,17 @@
 .carousel-caption {
+    color: turquoise;
+    background-color: rgba(1, 1, 1, 0.3);
+    caption-side: bottom;
+    font-family: 'Antic Slab', serif;
+}
+
+
+.header {
+    text-align: center;
     color: black;
-    background-color:#afaf;
+    font-size: 75px;
+    font-family: 'Antic Slab', serif;
+}
+.navbar {
+    font-family: 'Antic Slab', serif;
 }
