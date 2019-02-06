@@ -1,10 +1,10 @@
 .carousel-caption {
-    color: turquoise;
+    color: orange;
     background-color: rgba(1, 1, 1, 0.3);
     caption-side: bottom;
     font-family: 'Antic Slab', serif;
-    font-size: 100px;
-    bottom: 50%;
+    font-size: 70px;
+    bottom: 25%;
 }
 
 .navbar {
