@@ -3,8 +3,11 @@
     background-color: rgba(1, 1, 1, 0.3);
     caption-side: bottom;
     font-family: 'Antic Slab', serif;
-    font-size: 70px;
-    bottom: 25%;
+    font-size: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+
 }
 
 .navbar {
