@@ -60,7 +60,7 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#home">Home</a>
                 </li>
                 <li class="nav-item">
@@ -77,6 +77,17 @@
             </div> 
             <a href="#" class="btn btn-info" role="button">Sign In</a>
           </nav>
+
+            <!-- Navbar Active State -->
+
+        <script>
+            $(document).ready(function(){
+            $('.nav-item').click(function() {
+            $(this).siblings('li').removeClass('active');
+            $(this).addClass('active');
+                 });
+            });
+        </script>
           
 </head>
 <body id = "home">
