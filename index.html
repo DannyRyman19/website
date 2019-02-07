@@ -74,10 +74,9 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li> 
               </ul>
+              
             </div> 
-            <a href="#" class="btn btn-info" role="button">Sign In</a>
-          </nav>
-
+           
             <!-- Navbar Active State -->
 
         <script>
@@ -89,7 +88,11 @@
             });
         </script>
           
+         </nav>
+         
+          
 </head>
+
 <body id = "home">
     
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -242,6 +245,63 @@
       </ul>
       <a href="#home">Back To Top</a>
     </div>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Subscribe to our Newsletter</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <h4 class="modal-title">Subscribe to our newsletter</h4>
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <div class="body"></div>
+          <div class="grad"></div>
+          <br>
+          <form name="newsletter">
+          <div class="newsletter">
+            <input type="text" style="font-family: 'Antic Slab',serif;" placeholder="Email Address" name="email">
+             <br>
+             <br>
+             <input style = "font-family: 'Antic Slab',serif;"type="button" class="btn btn-primary" onclick="check(this.form)" value="Subscribe!"/>
+             <form onsubmit="document.getElementById('first').style.display = 'none'">
+          </div>
+  </form>
+    <!-- newsletter input -->
+  <script language="javascript">
+       function check(form)
+      {
+      if(form.email.value != "" )
+      {
+           if (form.email.value.indexOf("@")  > -1){
+             alert("Subscribed to the newsletter!")
+        
+
+           }
+           else {
+               alert("Incorrect Email Address!")
+           }
+ 
+       }
+       else{
+            alert("Please fill out your email address")
+       }
+    }
+      </script>
+          </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+
+      </div>
+    </div>
+     
   </footer>
   
 </html> 
