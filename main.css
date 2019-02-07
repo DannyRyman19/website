@@ -9,6 +9,14 @@
     bottom: initial;
 
 }
+.carousel-inner{
+    bottom: 25%;
+    max-width: inherit;
+    width: auto !important;
+    margin: 0 auto;
+  
+}
+
 
 .navbar {
     font-family: 'Antic Slab', serif;
@@ -46,3 +54,4 @@
     color: #484848;
     text-align: center;
 }
+

@@ -27,6 +27,13 @@
        });
     });
     </script>
+    <script>
+      $('.nav a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+    $('.navbar-toggler').click(); //bootstrap 4.x
+});
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
@@ -44,7 +51,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md">
-      
+    
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">Interactive Website</a>
           
@@ -60,13 +67,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
+                  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">Who We Are</a>
+                  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#about">Who We Are</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#team">The Team</a>
+                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#team">The Team</a>
                   </li> 
 
                 <li class="nav-item">
@@ -76,6 +83,7 @@
             </div> 
             <a href="#" class="btn btn-info" role="button">Sign In</a>
           </nav>
+          
 </head>
 <body id = "home">
     
@@ -140,9 +148,10 @@
           <p>Ut consectetur orci at ante varius, facilisis porttitor diam consectetur. Pellentesque pretium mi nibh, ac placerat orci pharetra quis. Sed mi sapien, consectetur non sem in, pulvinar ultrices orci. Praesent commodo felis purus, at congue augue rhoncus nec. Phasellus eget vulputate ipsum, a congue eros. Aliquam scelerisque mollis ante, vel vehicula lacus convallis quis. Etiam faucibus enim nec urna porta, id finibus purus scelerisque.</p>   
           <p>Donec a lorem ornare, ultricies lorem at, rhoncus magna. Morbi vitae urna imperdiet, pharetra tortor sit amet, posuere arcu. Maecenas ultrices bibendum commodo. Aliquam sit amet ullamcorper sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam auctor lacus quis arcu ultricies, sed laoreet sapien pretium. Nullam ornare, neque vitae interdum interdum, urna risus cursus tellus, ut dignissim urna urna in lorem. Aliquam sit amet sagittis turpis. Etiam auctor sapien quis ipsum accumsan, sit amet malesuada sem mattis.</p>
         </div>
+      </div>
+      <div class = "container" id ="team">
         <br>
-        <br>
-        <h1 class="header" id = "team">Meet The Team.</h1>
+        <h1 class="header">Meet The Team.</h1>
         <br>
         <div class="media">
             <div class="media-left media-middle">
