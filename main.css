@@ -17,7 +17,6 @@
   
 }
 
-
 .navbar {
     font-family: 'Antic Slab', serif;
     
@@ -53,5 +52,11 @@
     position: relative;
     color: #484848;
     text-align: center;
+}
+@media (min-width: 768px) {
+    .navbar-collapse {
+        height: auto !important;
+        padding-left: 0 !important;
+    }
 }
 
