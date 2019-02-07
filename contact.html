@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+           event.preventDefault();
+
+           // Store hash
+           var hash = this.hash;
+
+           // Using jQuery's animate() method to add smooth page scroll
+           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+             scrollTop: $(hash).offset().top
+           }, 800, function(){
+   
+             // Add hash (#) to URL when done scrolling (default click behavior)
+             window.location.hash = hash;
+           });
+         } // End if
+       });
+    });
+    </script>
+   
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Interactive Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Interactive Website</a>
+      
+        <!-- Toggler/collapsibe Button -->
+      
+        <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"> 
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span>
+           <span class="icon-bar"></span> 
+          </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#about">Who We Are</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#team">The Team</a>
+              </li> 
+
+            <li class="nav-item ">
+              <a class="nav-link" href="#top">Contact</a>
+            </li> 
+          </ul>
+          
+        </div> 
+       
+        <!-- Navbar Active State -->
+
+    <script>
+        $(document).ready(function(){
+        $('.nav-item').click(function() {
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+             });
+        });
+    </script>
+      
+     </nav>
+          
+</head>
+
+<body id="top">
+    
+        
+     
+<footer class="footer">
+    <div class="container">
+      <p class="text-muted">Quick Links</p>
+      <ul class="list-inline share-buttons">
+          <li>
+              <a href="http://www.facebook.com/" target="_blank"  title="Company on Facebook">
+                <img src="021-facebook.png" style="height:35px;">
+              </a>
+          </li>
+          <li>
+              <a href="http://youtube.com/" target="_blank"title="Company on YouTube">
+                  <img src="011-youtube.png" style="height:40px;">
+              </a>
+          </li>
+          <li>
+              <a href="https://twitter.com" target="_blank" title="Company on Twitter">
+                <img src="043-twitter.png" style="height:35px;">
+              </a>
+          </li>
+      </ul>
+      <a href="#home">Back To Top</a>
+    </div>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Subscribe to our Newsletter</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <h4 class="modal-title">Subscribe to our newsletter</h4>
+
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <div class="body"></div>
+          <div class="grad"></div>
+          <br>
+          <form name="newsletter">
+          <div class="newsletter">
+            <input type="text" style="font-family: 'Antic Slab',serif;" placeholder="Email Address" name="email">
+             <br>
+             <br>
+             <input style = "font-family: 'Antic Slab',serif;"type="button" class="btn btn-primary" onclick="check(this.form)" value="Subscribe!"/>
+             <form onsubmit="document.getElementById('first').style.display = 'none'">
+          </div>
+  </form>
+    <!-- newsletter input -->
+  <script language="javascript">
+       function check(form)
+      {
+      if(form.email.value != "" )
+      {
+           if (form.email.value.indexOf("@")  > -1){
+             alert("Subscribed to the newsletter!")
+        
+
+           }
+           else {
+               alert("Incorrect Email Address!")
+           }
+ 
+       }
+       else{
+            alert("Please fill out your email address")
+       }
+    }
+      </script>
+          </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+
+      </div>
+    </div>
+     
+  </footer>
+  
+</html> 
+
