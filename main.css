@@ -49,18 +49,26 @@
     background-color: #fafaff;
     border-top: 1px solid #ededed;
     padding: 30px;
-    z-index: 2;
-    position: relative;
+    position: bottom;
+  
     color: #484848;
     text-align: center;
 }
 @media (min-width: 768px) {
+  
     .navbar-collapse {
         height: auto !important;
         padding-left: 0 !important;
     }
+ 
+    
 }
 
+@media (max-width: 768px) {
+    .formInput{
+        height: auto !important;
+        width: auto !important;
+    }
 .modal-backdrop {
     background-color: #000;
     bottom: 0;

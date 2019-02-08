@@ -58,18 +58,20 @@
           
 </head>
 
+
 <body> 
+    <br>
   <br>
   <br>
 
     <div class ="container" style="font-family: 'Antic Slab',serif; text-align: center;">
       <h1>Need to get in contact with us?</h1>
-      <p>Use the form below and we'll get back to you as soon as we can!</p>
-      <form name="contactForm">
-          <div class="contactForm">
-                  <input type="text" style="background-color: antiquewhite;" placeholder="Name" name="ContactName"><br><br>
-                  <input type="text" style="background-color: antiquewhite;" placeholder="Email Address" name="ContactEmail"><br><br>
-                  <input type="text"style="background-color: antiquewhite; width=300px; height=300px;" placeholder="Message" name="ContactMessage"><br><br>
+      <p>Use the form below and we'll get back to you as soon as we can!</p> 
+      <form name="contactForm" >
+          <div class="contactForm" style="text-align: center;background-color: antiquewhite;"><br>
+                  <input class ="formInput"type="text" style = "width:30em;"placeholder="Name" name="ContactName"><br><br>
+                  <input class ="formInput" type="text" style = "width:30em; " placeholder="Email Address" name="ContactEmail"><br><br>
+                  <textarea class ="formInput" style = "width:30em; height:7em;" placeholder="Message" name="ContactMessage"></textarea><br><br>
                   <input type="button" class="btn btn-secondary" onclick="checkContact(this.form)" value="Send Message"><br><br>
                 
           </div>
@@ -92,13 +94,15 @@
                     alert("Please fill out all the boxes!")
                 }
               }
-             
-
               </script>     
   </form>
     </div>
         
 </body>
+<br>
+<br>
+<br>
+
 <!-- Footer -->   
 <footer class="footer">
     <div class="container">
