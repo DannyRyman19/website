@@ -27,7 +27,6 @@
        });
     });
     </script>
-   
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
@@ -43,53 +42,44 @@
     <title>Interactive Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
-    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md">
-    
+         <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md">
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">Interactive Website</a>
-          
             <!-- Toggler/collapsibe Button -->
-          
             <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"> 
-              <span class="sr-only">Toggle navigation</span> 
-              <span class="icon-bar"></span>
-               <span class="icon-bar"></span> 
-              </button>
-          
-            <!-- Navbar links -->
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span>
+                 <span class="icon-bar"></span> 
+                </button>
+            <!-- Links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#home">Home</a>
-                </li>
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle " href="#" id="navbardrop" data-toggle="dropdown">
+                        Home
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#about">Who We Are</a>
+                        <a class="dropdown-item" href="#team">Meet The Team</a>
+                        <a class="dropdown-item" href="#home">Back to top</a>
+                      </div>
+                    </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#about">Who We Are</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#team">The Team</a>
-                  </li> 
-
-                <li class="nav-item ">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li> 
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+               </li>
               </ul>
-              
-            </div> 
-           
-            <!-- Navbar Active State -->
 
-        <script>
-            $(document).ready(function(){
-            $('.nav-item').click(function() {
-            $(this).siblings('li').removeClass('active');
-            $(this).addClass('active');
-                 });
-            });
-        </script>
-          
-         </nav>
-         
+            <!-- Navbar Active State -->     
+            <script>
+               $(document).ready(function(){
+               $('.nav-item').click(function() {
+               $(this).siblings('li').removeClass('active');
+                $(this).addClass('active');
+                    });
+                });
+           </script>
+          </nav>
           
 </head>
 
