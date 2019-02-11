@@ -1,22 +1,37 @@
 .carousel-caption {
     color: orange;
     background-color: rgba(1, 1, 1, 0.3);
-    caption-side: bottom;
+    caption-side: top;
     font-family: 'Antic Slab', serif;
     font-size: 100px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     bottom: initial;
 
 }
 .carousel-inner{
-    bottom: 25%;
     max-width: inherit;
     width: auto !important;
-    margin: 0 auto;
+    height: 1000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
   
 }
 
+.Digital{
+    background: no-repeat center center fixed; 
+}
+
+.Code   {
+    background: no-repeat center center fixed; 
+}
+
+.Design{
+    background: no-repeat center center fixed; 
+}
 .navbar {
     
     font-family: 'Antic Slab', serif;
@@ -68,6 +83,9 @@
     .formInput{
         height: auto !important;
         width: auto !important;
+    }
+    .carousel-inner {
+        height: auto;
     }
 .modal-backdrop {
     background-color: #000;
